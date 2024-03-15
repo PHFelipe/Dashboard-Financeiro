@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;70-&display=swap');
 
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Estilização da scrollbars */
 ::-webkit-scrollbar{
   width: 5px;
@@ -7,7 +30,7 @@
 }
 
 ::-webkit-scrollbar-track{
-  box-shadow: inset 0 0 5 px #a5aaad;
+  box-shadow: inset 0 0 5px #a5aaad;
   border-bottom: 10px;
 }
 
@@ -25,11 +48,7 @@
 *{
   margin: 0;
   padding: 0;
-}
-
-body{
-  box-sizing:border-box;
-  font-family: 'Lato', sans-serif;
+  
 }
 
 .text-primary-p{
@@ -62,18 +81,22 @@ body{
   color: #3b9668;
 }
 
-.container{
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 0.8fr repeat(3,1fr);
-  grid-template-rows: 0.2fr 3fr;
-  grid-template-areas: 'sidebar nav nav'
-  'sidebar main main main';
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh; /* Para ocupar toda a altura da tela */
 }
-@media only screen and (max-width:978px){
-  .container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 0,2fr 3fr;
-    grid-template-areas: 'nav' 'main';
-  }
+
+.containera {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Centraliza horizontalmente */
+  align-items: stretch; /* Centraliza verticalmente */
+  width: 100vw; /* Para ocupar toda a largura da tela */
+  height: 100vh; /* Para ocupar toda a altura da tela */
+  overflow-y: auto;
+  margin: 0;
+  padding:0;
 }
+ 

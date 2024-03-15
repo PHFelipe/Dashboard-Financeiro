@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './components/sidebar/Sidebar';
-import './App.css';
 import Navbar from './components/navbar/Navbar';
+import './App.css'; // Importação do CSS principal
 import Main from './components/main/Main';
 
 const App = () => {
@@ -12,10 +12,13 @@ const App = () => {
     };
 
     return (
-        <div className="container">
+        <div className="containera">
+            <Sidebar sidebarOpen={sidebarOpen} closeSidebar={toggleSidebar} />
+            <div className = "test">
             <Navbar sidebarOpen={sidebarOpen} openSidebar={toggleSidebar} />
             <Main />
-            <Sidebar sidebarOpen={sidebarOpen} closeSidebar={toggleSidebar} />
+            </div>
+            
         </div>
     );
 };

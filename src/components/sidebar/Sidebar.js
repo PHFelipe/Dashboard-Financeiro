@@ -6,30 +6,91 @@ import { faTimes, faMinusSquare, faShop, faScissors } from '@fortawesome/free-so
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     return (
-        <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
-            <div className="sidebar__title">
-                <div className="sidebar__img">
-                    <img src={logo} alt="logo" />
-                    <h1>Dashboard de Barbearia</h1>
+        <nav id="sidebar" className={sidebarOpen ? 'open-sidebar' : ''}>
+            <div id="sidebar_content">
+                <div id="user">
+                    <img src={logo} id="Logo" alt="logo" />
+
+                    <p id="user_infos">
+                        <span className="item-description">
+                            Fulano de Tal
+                        </span>
+                        <span className="item-description">
+                            Lorem Ipsum
+                        </span>
+                    </p>
                 </div>
-                <FontAwesomeIcon icon={faTimes} onClick={closeSidebar} className="sidebarIcon" aria-hidden="true" />
+
+                <ul id="side_items">
+                    <li className="side-item active">
+                        <a href="#">
+                            <i className="fa-solid fa-chart-line"></i>
+                            <span className="item-description">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+
+                    <li className="side-item">
+                        <a href="#">
+                            <i className="fa-solid fa-user"></i>
+                            <span className="item-description">
+                                Usuários
+                            </span>
+                        </a>
+                    </li>
+
+                    <li className="side-item">
+                        <a href="#">
+                            <i className="fa-solid fa-bell"></i>
+                            <span className="item-description">
+                                Notificações
+                            </span>
+                        </a>
+                    </li>
+
+                    <li className="side-item">
+                        <a href="#">
+                            <i className="fa-solid fa-box"></i>
+                            <span className="item-description">
+                                Produtos
+                            </span>
+                        </a>
+                    </li>
+
+                    <li className="side-item">
+                        <a href="#">
+                            <i className="fa-solid fa-image"></i>
+                            <span className="item-description">
+                                Imagens
+                            </span>
+                        </a>
+                    </li>
+
+                    <li className="side-item">
+                        <a href="#">
+                            <i className="fa-solid fa-gear"></i>
+                            <span className="item-description">
+                                Configurações
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button id="open_btn" onClick={closeSidebar}>
+                    <i id="open_btn_icon" className="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-            <div className="sidebar__menu">
-                <div className="sidebar__link active_menu_link">
-                    <FontAwesomeIcon icon={faMinusSquare} />
-                    <a href="#"> Home</a>
-                </div>
-                <h2>DASHBOARDS</h2>
-                <div className='sidebar__link'>
-                    <FontAwesomeIcon icon={faShop} />
-                    <a href="#">Análises da Barbearia</a>
-                </div>
-                <div className='sidebar__link'>
-                    <FontAwesomeIcon icon={faScissors} />
-                    <a href="#">Análises por Barbeiros</a>
-                </div>
+
+            <div id="logout">
+                <button id="logout_btn">
+                    <i className="fa-solid fa-right-from-bracket"></i>
+                    <span className="item-description">
+                        Logout
+                    </span>
+                </button>
             </div>
-        </div>
+        </nav>
     );
 };
 

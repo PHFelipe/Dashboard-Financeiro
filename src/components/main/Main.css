@@ -1,13 +1,24 @@
+*{
+    box-sizing:border-box;
+
+}
 main{
     background: #f3f4f6;
-    grid-area:main;
     overflow-y: auto;
+    display:flex;
+    flex:1;
+    flex-grow: 1;
+    height:100%;
+    margin-left:40px;
 }
 
 .main__container{
-    padding-top: 70px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 70px ;
+    display:flex;
+    flex-direction:column;
+    overflow:auto;
+    flex-grow: 1;
+    height: 100%;
 }
 
 .main__title > img{
@@ -29,7 +40,7 @@ main{
 }
 
 .main__cards{
-    display:grid;
+    display:flex;
     grid-template-columns: repeat(4,1fr);
     gap:30px;
     margin:20px 0;
@@ -54,11 +65,12 @@ main{
 }
 
 .card_inner > span{
+    white-space: nowrap;
     font-size: 20px;
 }
 
 .card_inner > p{
-    margin-top: 13px;
+    align-items: center;
 }
 
 .charts{
@@ -186,24 +198,4 @@ main{
     padding: 25px;
     border-radius: 5px;
     font-size: 14px;
-}
-
-@media only screen and (max-width: 855px){
-    .main_cards{
-        grid-template-columns: 1fr;
-        gap:10px;
-        margin-bottom: 0;
-    }
-
-    .charts{
-        grid-template-columns:1fr;
-        margin-top: 30px;
-        justify-content: center;
-    }
-
-    .charts__right__cards{
-        grid-template-columns: 1fr;
-        align-items: center;
-        margin-top:30px;
-    }
 }

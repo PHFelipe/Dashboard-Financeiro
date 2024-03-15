@@ -1,6 +1,7 @@
 .navbar {
     background: #FFF;
-    grid-area: nav;
+
+    width:100%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -16,6 +17,9 @@
 .nav_icon > i {
     font-size: 26px;
     color: #a5aaad;
+}
+.navbar_left{
+  margin-left: 80px;
 }
 
 .navbar_left > a {
@@ -74,23 +78,3 @@
   .icon_wrapper > a:not(.no-circle):hover::before {
     opacity: 0.2;
   }
-
-@media only screen and (max-width: 978px) {
-    .nav_icon {
-        display: inline;
-    }
-
-    .navbar_right {
-        justify-content: flex-start;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .navbar_left {
-        display: none;
-    }
-
-    .navbar_right {
-        justify-content: center;
-    }
-}
