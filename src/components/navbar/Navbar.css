@@ -19,11 +19,11 @@
     color: #a5aaad;
 }
 .navbar_left{
-  margin-left: 80px;
+  margin-left: 100px;
 }
 
 .navbar_left > a {
-    margin-right: 30px;
+    margin-right: 20px;
     text-decoration: none;
     color: #a5aaad;
     font-size: 15px;

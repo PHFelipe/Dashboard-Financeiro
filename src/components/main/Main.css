@@ -13,7 +13,8 @@ main{
 }
 
 .main__container{
-    padding: 70px ;
+    padding: 50px 70px 30px 10px ;
+    margin-left: 70px;
     display:flex;
     flex-direction:column;
     overflow:auto;
@@ -50,8 +51,9 @@ main{
     display: flex;
     flex-direction:column;
     justify-content: space-around;
+    text-align: center;
     height: 70px;
-    padding: 25px;
+    padding: 20px 30px 25px 30px;
     border-radius: 5px;
     background-color: #FFF;
 
@@ -66,6 +68,7 @@ main{
 
 .card_inner > span{
     white-space: nowrap;
+    margin-left:10px;
     font-size: 20px;
 }
 
@@ -85,7 +88,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #FFF;
@@ -126,7 +129,7 @@ main{
 .charts__right{
     padding:25px;
     border-radius: 8px;
-    background: #FFF;
+    background: rgb(200, 200, 200);
     box-shadow:5px 5px 13px #ededed, -5px -5px 13px #FFF;
 }
 
@@ -134,27 +137,28 @@ main{
     display:flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #3c3c3c;
+    margin: -25px -25px 40px -25px;
+    border-radius: 8px 8px 0 0px;
 }
 
-.charts__right__title > div > h1{
-    font-size: 24px;
-    color: #2e4a66;
-    margin-bottom: 5px;
+.charts__right__title > div>  h1{
+    font-size: 22px;
+    color: rgb(228, 227, 227);
+    margin-bottom: 4px;
+    margin-top:4px;
+    margin-left: 10px;
+    align-items: center;
+}
+.charts__right__title > div{
+    display: flex;
 }
 
-.charts__right__title > div > p {
-    font-size: 14px;
-    font-weight: 700;
-    color: #a5aaad;
-}
-
-.charts_right_title > i{
-    color: #FFF;
-    font-size:20px;
-    background: #39447a;
-    border-radius: 200px 0px 200px 200px;
-    border: 0px solid #000;
-    padding:15px;
+.charts__right__title > div> i{
+    color: rgb(228, 227, 227);
+    margin-top: 9px;
+    margin-left: 20px;
+     
 }
 
 .charts__right__cards{

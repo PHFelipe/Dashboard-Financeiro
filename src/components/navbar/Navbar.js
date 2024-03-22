@@ -18,10 +18,10 @@ const Navbar = ({ openSidebar }) => {
       </div>
 
       <div className="navbar_left">
-        <a href="#"> Produtos</a>
-        <a href="#"> Usuários</a>
+        <a href="#"> Diário</a>
+        <a href="#"> Mensal</a>
         <a href="#" className="active_link">
-          Admin
+          Por período
         </a>
       </div>
 

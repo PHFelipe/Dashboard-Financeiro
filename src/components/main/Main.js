@@ -12,7 +12,6 @@ const Main = () => {
                 </div>
                 <div className="main__cards">
                     <div className="card">
-                        <i className="fa fa-file-text fa-2x text-lightblue"></i>
                         <div className="card_inner">
                             <p className = "text-primary-p"> Número de atendimentos</p>
                             <span className="font-bold text-title"> 578</span>
@@ -20,7 +19,6 @@ const Main = () => {
                     </div>
 
                     <div className="card">
-                        <i className="fa fa-money fa-2x text-red"></i>
                         <div className="card_inner">
                             <p className = "text-primary-p"> Rendimento Mensal</p>
                             <span className="font-bold text-title"> R$ 2.467</span>
@@ -28,15 +26,13 @@ const Main = () => {
                     </div>
                     
                     <div className="card">
-                        <i className="fa fa-archive fa-2x text-yellow"></i>
                         <div className="card_inner">
                             <p className = "text-primary-p">Rendimento Anual </p>
                             <span className="font-bold text-title"> R$ 10.000</span>
                         </div>
                     </div>
 
-                    <div className="card">
-                        <i className="fa fa-money fa-2x text-red"></i>
+                    <div className="card"> 
                         <div className="card_inner">
                             <p className = "text-primary-p"> Gastos Totais</p>
                             <span className="font-bold text-title"> R$ 1000.0</span>
@@ -59,10 +55,9 @@ const Main = () => {
                     <div className="charts__right">
                         <div className="charts__right__title">
                             <div>
-                                <h1>Daily Report</h1>
-                                <p>Ubatuba, são paulo,br</p>
+                                <i class="fa-solid fa-user"></i>
+                                <h1>Comissões por Barbeiro</h1>
                             </div>
-                            <i className="fa fa-area-chart"></i>
                         </div>
                         
                         <div className="charts__right__cards">
