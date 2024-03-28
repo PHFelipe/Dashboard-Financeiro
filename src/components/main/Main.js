@@ -1,6 +1,6 @@
-import barbeiro from "../../assets/Barbeiro.svg";
 import "./Main.css";
-import Chart from "../charts/Chart";
+import LineChart from "../charts/LineChart";
+import BarChart from "../charts/BarChart";
 const Main = () => {
     return(
         <main>
@@ -13,73 +13,52 @@ const Main = () => {
                 <div className="main__cards">
                     <div className="card">
                         <div className="card_inner">
-                            <p className = "text-primary-p"> Número de atendimentos</p>
+                            <i class="fa-solid fa-sack-dollar fa-xl"></i>
+                            <p className = "text-primary-p"> Faturamento Total</p>
                             <span className="font-bold text-title"> 578</span>
                         </div>
                     </div>
 
                     <div className="card">
                         <div className="card_inner">
-                            <p className = "text-primary-p"> Rendimento Mensal</p>
+                            <i class="fa-solid fa-user-group fa-xl"></i>
+                            <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                            <p className = "text-primary-p"> Total de Comissões</p>
                             <span className="font-bold text-title"> R$ 2.467</span>
                         </div>
                     </div>
                     
                     <div className="card">
                         <div className="card_inner">
-                            <p className = "text-primary-p">Rendimento Anual </p>
+                            <i class="fa-solid fa-cash-register fa-xl"></i>
+                            <p className = "text-primary-p"> Valor de Caixa </p>
                             <span className="font-bold text-title"> R$ 10.000</span>
                         </div>
                     </div>
 
-                    <div className="card"> 
-                        <div className="card_inner">
-                            <p className = "text-primary-p"> Gastos Totais</p>
-                            <span className="font-bold text-title"> R$ 1000.0</span>
-                        </div>
-                    </div>
                 </div>
 
                 <div className="charts">
                     <div className="charts__left">
                         <div className="charts__left__title">
                             <div>
-                                <h1>Daily Report</h1>
-                                <p>Ubatuba, são paulo,br</p>
+                                <i class="fa-solid fa-money-bill-trend-up fa-lg"></i>
+                                <h1>Lucro</h1>
                             </div>
-                            <i className="fa fa-usd"></i>
                         </div>
-                        <Chart/>
+                        <LineChart/>
                     </div>
 
                     <div className="charts__right">
                         <div className="charts__right__title">
                             <div>
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-user fa-lg"></i>
                                 <h1>Comissões por Barbeiro</h1>
                             </div>
                         </div>
                         
                         <div className="charts__right__cards">
-                            <div className="card1">
-                                <h1>lucro</h1>
-                                <p>R$2500</p>
-                            </div>
-
-                            <div className="card2">
-                                <h1>Pagamentos</h1>
-                                <p>R$250.0</p>
-                            </div>
-
-                            <div className="card3">
-                                <h1>Custos de Hospedagem</h1>
-                                <p>R$150</p>
-                            </div>
-
-                            <div className="card4">
-                                <h1>Banco de dados</h1>
-                                <p>R$190</p>
-                            </div>
+                            <BarChart/>
                         </div>
                     </div>
                 </div>

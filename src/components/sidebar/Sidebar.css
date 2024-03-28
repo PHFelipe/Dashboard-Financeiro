@@ -62,7 +62,7 @@
 }
 
 .side-item.active {
-    background-color: #4f46e5;
+    background-color: rgba(0, 0, 0);
 }
 
 .side-item:hover:not(.active),

@@ -1,8 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
-import logo from '../../assets/Logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faMinusSquare, faShop, faScissors } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../assets/LogoBarbearia.png';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     return (
@@ -13,10 +11,10 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
                     <p id="user_infos">
                         <span className="item-description">
-                            Fulano de Tal
+                            R R
                         </span>
                         <span className="item-description">
-                            Lorem Ipsum
+                            Barber Shop
                         </span>
                     </p>
                 </div>
@@ -33,48 +31,13 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
                     <li className="side-item">
                         <a href="#">
-                            <i className="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-reply"></i>
                             <span className="item-description">
-                                Usuários
+                                Retornar
                             </span>
                         </a>
                     </li>
-
-                    <li className="side-item">
-                        <a href="#">
-                            <i className="fa-solid fa-bell"></i>
-                            <span className="item-description">
-                                Notificações
-                            </span>
-                        </a>
-                    </li>
-
-                    <li className="side-item">
-                        <a href="#">
-                            <i className="fa-solid fa-box"></i>
-                            <span className="item-description">
-                                Produtos
-                            </span>
-                        </a>
-                    </li>
-
-                    <li className="side-item">
-                        <a href="#">
-                            <i className="fa-solid fa-image"></i>
-                            <span className="item-description">
-                                Imagens
-                            </span>
-                        </a>
-                    </li>
-
-                    <li className="side-item">
-                        <a href="#">
-                            <i className="fa-solid fa-gear"></i>
-                            <span className="item-description">
-                                Configurações
-                            </span>
-                        </a>
-                    </li>
+                    
                 </ul>
 
                 <button id="open_btn" onClick={closeSidebar}>
