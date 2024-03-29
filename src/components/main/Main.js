@@ -15,16 +15,16 @@ const Main = () => {
                         <div className="card_inner">
                             <i class="fa-solid fa-sack-dollar fa-xl"></i>
                             <p className = "text-primary-p"> Faturamento Total</p>
-                            <span className="font-bold text-title"> 578</span>
+                            <span className="font-bold text-title"> R$ 1.000</span>
                         </div>
                     </div>
 
                     <div className="card">
                         <div className="card_inner">
                             <i class="fa-solid fa-user-group fa-xl"></i>
-                            <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                            <i class="fa-solid fa-dollar-sign fa-lg" ></i>
                             <p className = "text-primary-p"> Total de Comissões</p>
-                            <span className="font-bold text-title"> R$ 2.467</span>
+                            <span className="font-bold text-title"> R$ 785</span>
                         </div>
                     </div>
                     
@@ -32,7 +32,15 @@ const Main = () => {
                         <div className="card_inner">
                             <i class="fa-solid fa-cash-register fa-xl"></i>
                             <p className = "text-primary-p"> Valor de Caixa </p>
-                            <span className="font-bold text-title"> R$ 10.000</span>
+                            <span className="font-bold text-title"> R$ 75</span>
+                        </div>
+                    </div>
+
+                    <div className="card" id="card-lucro">
+                        <div className="card_inner" >
+                        <i class="fa-solid fa-coins fa-xl"></i>
+                            <p className = "text-primary-p"> Lucro Total</p>
+                            <span className="font-bold text-title"> R$ 162</span>
                         </div>
                     </div>
 

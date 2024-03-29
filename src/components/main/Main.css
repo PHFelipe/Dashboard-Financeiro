@@ -13,7 +13,7 @@ main{
 }
 
 .main__container{
-    padding: 50px 70px 30px 10px ;
+    padding: 25px 70px 55px 10px ;
     margin-left: 70px;
     display:flex;
     flex-direction:column;
@@ -80,6 +80,10 @@ main{
 
 .card_inner > i{
     margin-left:0px;
+}
+
+#card-lucro{
+    display: none;
 }
 
 .charts{
@@ -166,14 +170,43 @@ main{
 }
 
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:430px) {
     .charts{
-        display: grid;
-        grid-template-rows: repeat(2,1fr);
-        gap:30px;
-        margin-top: 50px;
-        width: 300px;
+        display: none;
+    }
+    .main__cards{
+        flex-direction: column;  
+        margin-left: 10px; /* Ajuste a margem interna dos cards */
+    }
+    .card{
+        height: 150px;
+        width: 220px;
+        text-align: center;
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 5px; 
+    }
+    .card_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card_inner i {
+        margin-bottom: 15px;
+    }
+    .card_inner p,
+    .card_inner span {
+        margin: 5px 0;
+    }
+    .card .fa-dollar-sign{
+         margin-left: 45px;
+         margin-top: -10px;
+    }
+    #card-lucro{
+        display: flex;
     }
 }
+
 
  

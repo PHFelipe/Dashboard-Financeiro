@@ -31,9 +31,9 @@
 }
 
 .navbar_left .active_link {
-    color: #265acc;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
-    padding-bottom: 12px;
+  color: #265acc;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+  padding-bottom: 12px;
 }
 
 .navbar_right {
@@ -78,3 +78,15 @@
   .icon_wrapper > a:not(.no-circle):hover::before {
     opacity: 0.2;
   }
+
+  .active_calendar{
+    margin-left: 120px;
+  }
+
+@media screen and (max-width:430px) {
+  .navbar{
+    margin-top: 10px;
+    height:62px;
+  }
+  
+}

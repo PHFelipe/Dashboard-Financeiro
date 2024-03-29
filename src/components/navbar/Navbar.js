@@ -5,17 +5,25 @@ import "./Navbar.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 
+        
 const Navbar = ({ openSidebar }) => {
   const [showCalendar, setShowCalendar] = useState(false);
   const [selectedDateRange, setSelectedDateRange] = useState([new Date(), new Date()]);
 
   const toggleCalendar = () => {
     setShowCalendar(!showCalendar);
+    setActiveLink(null); 
   };
 
   const handleSelectDateRange = (date) => {
     setSelectedDateRange(date);
     setShowCalendar(false);
+  };
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleSetActiveLink = (index) => {
+    setActiveLink(index);
+    setShowCalendar(false); 
   };
 
   return (
@@ -25,17 +33,24 @@ const Navbar = ({ openSidebar }) => {
       </div>
 
       <div className="navbar_left">
-        <a href="#"> Diário</a>
-        <a href="#"> Mensal</a>
-        <a href="#" onClick={toggleCalendar} className="active_link">
+        <a href="#" className={activeLink === 0 ? "active_link" : ""} onClick={() => handleSetActiveLink(0)}>
+          Diário
+        </a>
+        <a href="#" className={activeLink === 1 ? "active_link" : ""} onClick={() => handleSetActiveLink(1)}>
+          Mensal
+        </a>
+        <a href="#" onClick={toggleCalendar} className="Period">
           Por período
         </a>
+        <div className="active_calendar">
         {showCalendar && (
           <Calendar
             dateFormat="dd/mm/yy"
             value = {selectedDateRange} onChange={(event) => setSelectedDateRange(event.value)} selectionMode = "range"
+            readOnlyInput={true}
           />
         )}
+        </div>
       </div>
 
       <div className="navbar_right">

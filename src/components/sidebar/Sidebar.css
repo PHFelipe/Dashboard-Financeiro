@@ -151,3 +151,9 @@
     justify-content: flex-start;
     gap: 14px;
 }
+
+@media screen and (max-width:430px){
+    #logout{
+        margin-bottom: 60px;
+    }
+}

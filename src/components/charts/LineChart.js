@@ -72,7 +72,7 @@ const LineChart = () => {
         <LineSeries 
           data={data} 
           onNearestX={handleNearestX} 
-          style={{ stroke: 'violet', strokeWidth: 3 }} 
+          style={{ stroke: '#3c3c3c', strokeWidth: 3 }} 
         />
         <Crosshair values={crosshairValues}>
           <div style={{ background: 'rgba(255, 255, 255, 0.8)', border: '1px solid #aaa', padding: '5px' }}>

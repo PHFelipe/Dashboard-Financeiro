@@ -26,10 +26,11 @@ const BarChart = () => {
         data={data}
         onValueMouseOver={value => setHoveredBar(value)}
         onValueMouseOut={() => setHoveredBar(null)}
+        color = "#3c3c3c"
       />
       {hoveredBar && (
         <Hint value={hoveredBar}>
-          <div style={{ background: 'rgba(0, 0, 0, 0.8)', color: '#fff', padding: '5px 10px', borderRadius: '5px' }}>
+          <div style={{ background: 'rgba(0, 0, 0, 0.8)', color: '#FFF', padding: '5px 10px', borderRadius: '5px' }}>
             {hoveredBar.y}
           </div>
         </Hint>
